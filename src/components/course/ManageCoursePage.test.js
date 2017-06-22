@@ -2,10 +2,10 @@ import expect from 'expect';
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import TestUtils from 'react-addons-test-utils';
-import ManageCoursePage from './ManageCoursePage'; // eslint-disable-line
+import {ManageCoursePage} from './ManageCoursePage'; // eslint-disable-line
 
 describe('Manage Course Page', () => {
-  it.skip('sets error message when trying to save empty title', () => {
+  it('sets error message when trying to save empty title', () => {
     const props = {
       authors: [],
       actions: { saveCourse: () => { return Promise.resolve(); }},
